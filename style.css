@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -268,9 +268,80 @@ body{
     justify-content: center;
     z-index: 1000;
 }
+/*----------------------------------------Study--------------------------------*/
+.study{
+    margin: 10px 0;
+}
+.study_left{
+    width: 65%;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    height: 540px;
+}
+.study_right{
+    width: 35%;
+    height: 540px;
+    overflow-y: scroll;
+}
+.study_right p{
+    font-family: 'Playfair Display', serif;
+}
+.study_video{
+    width: 95%;
+}
+.study_section_btn{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 7px 0;
+}
+.study_content_title{
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+.study_list{
+    width: 100%;
+}
+.study_item{
+    width: 100%;
+    list-style: none;
+    padding: 10px 0;
+    padding-left: 3px;
+    border-radius: 5px;
+}
+.study_item:hover{
+    background-color: rgb(218, 210, 210);
+}
+.study_item a{
+    color: #000;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    padding-left: 5px;
+}
+.study_item:hover a{
+    color: #000;
+    text-decoration: none;
+}
+.study_list_wrapper{
+    background-color: red;
+}
 @media screen and (max-width: 1270px){
     .course_item{
         height: 350px;
+    }
+    .study{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .study_left{
+        width: 95%;
+        margin-top: 0;
+    }
+    .study_right{
+        margin-top: 0;
+        width: 95%;
     }
 }
 @media screen and (max-width:1160px){
